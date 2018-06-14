@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import AdminHeader from '../Components/AdminHeader.vue'
+import AdminHeader from '../components/AdminHeader.vue'
 export default {
    name:'Home',
    components:{AdminHeader}
