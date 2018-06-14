@@ -1,0 +1,107 @@
+/*网站基本定义*/
+html{
+    font-size: 625%;/*100/16 px除100*/
+	height: 100%;
+}
+body{
+    height: 100%;
+}
+
+div,
+form,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+strong,
+span,
+pre,
+input,
+body,
+table,
+td,
+tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	outline: none;
+	
+}
+body {
+	font-family: "Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif";
+	font-size: 0.12rem;
+	color: #333;
+}
+
+em {
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none;
+}
+input,
+img,
+em,
+a {
+	vertical-align: middle;
+	outline: none;
+}
+span,
+em,
+i,
+a {
+	display: inline-block;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+
+}
+.clear{
+	clear: both;
+}
+*{
+  box-sizing: border-box;
+}
+/*table列表*/
+.el-table th {
+    background-color: #eef1f6;
+	text-align: center;
+}
+.el-table__body td{
+	text-align: center;
+}
+/*分页*/
+.pagestyle{
+  padding: 20px 0px 0 0;
+  float: inherit;
+  overflow: hidden;
+}
+.pagestyle .el-pagination{
+    float: right;
+  }
