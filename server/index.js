@@ -34,17 +34,20 @@ function createRenderer(bundle, template) {
     });
 }
 
-//不走请求服务端的路由直接走historyApiFallback中间件返回指定页面
 //服务端启动带动客户端热加载,刷新跳404不存在页面
 //https://mmxiaowu.com/article/589af63fe9be1c5b21ef8e9b
+
+
+//不走请求服务端的路由直接走historyApiFallback中间件返回指定页面
 app.use(koaconvert(historyApiFallback({
   verbose: true,//开启日志
+  index: '/admin.html',
   rewrites: [
     { from: /^\/front$/, to: '/front.html' },
     { from: /^\/front\/login/, to: '/front.html' },
     { from: /^\/admin$/, to: '/admin.html' },
     { from: /^\/admin\/login/, to: '/admin.html' },
-  ],
+  ],//通过正则配置，配置相关路由
 })))
 
 
@@ -54,7 +57,7 @@ if (process.env.NODE_ENV === 'production') {
    console.log('读取生产环境配置')
    app.use(static(staticPath))
 } else {
-  console.log('读取开发环境配置')
+  console.log('读取开发环境配置11')
   require('../build/setup-dev-server')(app, (bundle, template) => {
     renderer = createRenderer(bundle, template)
   })
@@ -72,5 +75,5 @@ app
   .use(router.allowedMethods());
 // 开启服务
 app.listen(config.app.port, () => {
-    console.log('The server is running at http://localhost:' + config.app.port);
+    console.log('The server is running at http://127.0.0.1:' + config.app.port);
 });

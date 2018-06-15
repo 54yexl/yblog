@@ -8,7 +8,7 @@ import AddArticle  from '@/admin/src/page/AddArticle.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+//   mode: 'history',
   routes: [
         {
             path: '/admin/login',
@@ -42,5 +42,10 @@ export default new Router({
                 { path: '/admin/addarticle/:id',name: '添加文章',component:AddArticle}
             ]
         },
+        {
+          path: '*',
+          redirect: '/admin',
+          hidden: true
+        }
   ]
 })
