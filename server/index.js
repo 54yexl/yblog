@@ -1,4 +1,5 @@
 const Koa = require('koa');
+const static = require('koa-static')
 const config = require('./config/config.js');
 const mongoose = require('mongoose');
 const koalogger =require( 'koa-logger')//报错日志
@@ -17,7 +18,8 @@ const app = new Koa();
 app.use(koalogger());
 app.use(bodyParser());
 
-
+const staticPath = './dist'
+app.use(static(staticPath))
 // 创建渲染器，开启组件缓存
 let renderer;
 
@@ -36,7 +38,7 @@ function createRenderer(bundle, template) {
 //服务端启动带动客户端热加载,刷新跳404不存在页面
 //https://mmxiaowu.com/article/589af63fe9be1c5b21ef8e9b
 app.use(koaconvert(historyApiFallback({
-  // verbose: true,//开启日志
+  verbose: true,//开启日志
   rewrites: [
     { from: /^\/front$/, to: '/front.html' },
     { from: /^\/front\/login/, to: '/front.html' },
@@ -50,6 +52,7 @@ app.use(koaconvert(historyApiFallback({
 //判断环境的打包入口
 if (process.env.NODE_ENV === 'production') {
    console.log('读取生产环境配置')
+   app.use(static(staticPath))
 } else {
   console.log('读取开发环境配置')
   require('../build/setup-dev-server')(app, (bundle, template) => {

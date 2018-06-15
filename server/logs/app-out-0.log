@@ -1,0 +1,74 @@
+读取生产环境配置
+The server is running at http://localhost:8886
+  <-- GET /front.html
+  --> GET /front.html 404 41ms -
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 7ms -
+  <-- GET /front.html
+  --> GET /front.html 404 2ms -
+  <-- GET /admin.html
+  --> GET /admin.html 404 3ms -
+  <-- GET /admin.html
+  --> GET /admin.html 404 1ms -
+  <-- GET /admin.html
+  --> GET /admin.html 404 2ms -
+  <-- GET /
+  --> GET / 404 3ms -
+  <-- GET /admin
+  --> GET /admin 404 2ms -
+  <-- GET /admin
+  --> GET /admin 404 2ms -
+  <-- GET /admin.html
+  --> GET /admin.html 404 2ms -
+  <-- GET /admin
+  --> GET /admin 404 2ms -
+  <-- GET /admin/login
+  --> GET /admin/login 404 2ms -
+  <-- GET /admin/login
+  --> GET /admin/login 404 1ms -
+  <-- GET /admin/login
+  --> GET /admin/login 404 51ms -
+  <-- GET /admin.html
+  --> GET /admin.html 404 2ms -
+  <-- GET /admin.html
+  --> GET /admin.html 404 3ms -
+  <-- GET /admin.html
+  --> GET /admin.html 404 3ms -
+  <-- GET /admin
+  --> GET /admin 404 3ms -
+  <-- GET /admin
+  --> GET /admin 404 4ms -
+读取生产环境配置
+The server is running at http://localhost:8886
+  <-- GET /admin
+Rewriting GET /admin to /admin.html
+  --> GET /admin 404 19ms -
+  <-- GET /admin
+Rewriting GET /admin to /admin.html
+  --> GET /admin 404 3ms -
+  <-- GET /admin
+Rewriting GET /admin to /admin.html
+  --> GET /admin 404 4ms -
+  <-- GET /admin
+Rewriting GET /admin to /admin.html
+  --> GET /admin 404 3ms -
+  <-- GET /admin
+Rewriting GET /admin to /admin.html
+  --> GET /admin 404 4ms -
+读取生产环境配置
+The server is running at http://localhost:8886
+  <-- GET /admin
+Rewriting GET /admin to /admin.html
+  --> GET /admin 200 148ms 397b
+  <-- GET /manifest.ac3e2d1eb98d0028af24.js
+  <-- GET /vendor_admin.fcb3a5ce3bd7f3edd42e.js
+  <-- GET /admin.19f9a1997d2116c28ef2.js
+  --> GET /manifest.ac3e2d1eb98d0028af24.js 200 27ms 3.81kb
+  --> GET /admin.19f9a1997d2116c28ef2.js 200 80ms 276.65kb
+  <-- GET /manifest.ac3e2d1eb98d0028af24.js.map
+  --> GET /manifest.ac3e2d1eb98d0028af24.js.map 200 18ms 3.87kb
+  --> GET /vendor_admin.fcb3a5ce3bd7f3edd42e.js 200 334ms 2.03mb
+  <-- GET /vendor_admin.fcb3a5ce3bd7f3edd42e.js.map
+  <-- GET /admin.19f9a1997d2116c28ef2.js.map
+  --> GET /admin.19f9a1997d2116c28ef2.js.map 200 133ms 359.78kb
+  --> GET /vendor_admin.fcb3a5ce3bd7f3edd42e.js.map 200 594ms 2.5mb
