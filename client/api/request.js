@@ -4,7 +4,7 @@ let loadingInstance='';
 
 // 创建axios实例
 const request = axios.create({
-  baseURL: 'http://127.0.0.1:8886/', // 生产环境接口
+  baseURL: 'http://101.200.44.26:8886/', // 生产环境接口
 //   withCredentials: true // 允许携带cookie
 });
 // request拦截器，实现loading加载
