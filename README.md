@@ -6,4 +6,5 @@
 2、node es6转es5 babel配置  http://mclspace.com/2016/05/21/node-es6-module-template/
 3、部署+ https://segmentfault.com/a/1190000010213434
 4、pm2保持Node应用程序永久活动 https://www.kancloud.cn/daiji/pm2/395279
+测试git
 ```
