@@ -7,4 +7,5 @@
 3、部署+ https://segmentfault.com/a/1190000010213434
 4、pm2保持Node应用程序永久活动 https://www.kancloud.cn/daiji/pm2/395279
 测试git
+测试git22
 ```
